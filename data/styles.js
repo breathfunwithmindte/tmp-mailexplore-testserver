@@ -7,7 +7,7 @@ module.exports = {
   clr2: "#B8BBBF",
   h: "rgba(0,0,0,0.14)",
   hl: "rgba(255,255,255,0.23)",
-  s: "",
+  s: "rgba(0,0,0,0.34)",
   bclr: "rgba(0,0,0,0.86)",
   bclr1: "#45494E",
   p: "1.14rem",

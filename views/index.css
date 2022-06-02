@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--clr1) !important;
+}
+
+:root {
+  --bg: #0D1117;
+  --bg1: #161B22;
+  --bg2: #30363D;
+  --bg3: #0d2630;
+  --clr: #FFFFE1;
+  --clr1: #B9BBB8;
+  --prg: #2EA043;
+  --prg1: #2EA043;
+  --prb: #4C9BF7;
+  --prb1: #4C9BF7;
+  --b: 0.14rem;
+}
+
+html, body { 
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg);
+  display: flex;
+}
+
+h1, h2, h3, strong {
+  color: var(--clr) !important;
+}
+
+.header {
+  height: 100vh;
+  width: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg);
+  border-right: var(--b) solid var(--bg3)
+}
+
+.main-wrapper { 
+  width: calc(100vw - 56px);
+  height: 100vh;
+}
+
+.main {
+  width: 100%;
+  height: calc(100vh - 256px);
+  border-bottom: var(--b) solid var(--bg3);
+  resize: vertical;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside {
+  width: 100%;
+  height: 256px;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: var(--bg1);
+  resize: vertical;
+}
+
+.nav {
+  width: 369px;
+  height: 100%;
+  overflow: auto;
+  border-right: var(--b) solid var(--bg3);
+  background: var(--bg1)
+}
+
+.page {
+  width: calc(100% - 369px);
+  height: 100%;
+  overflow: auto;
+  background: var(--bg2)
+}
+
+#page-header {
+  width: 100%;
+  height: 56px;
+  border-bottom: var(--b) solid var(--bg3);
+}
+#page-header ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

@@ -26,4 +26,10 @@ app.get("/api/v1/emails", (req, res) => {
   })
 })
 
+app.use("/public", express.static(require("path").resolve() + "/views"))
+
+app.get("/", (req, res) => {
+  res.sendFile(require("path").resolve() +  "/index.html")
+})
+
 app.listen(3001)
